@@ -1,0 +1,26 @@
+<h1>Foods</h1>
+
+<div class="row">
+	<% @food.each do |food| %>
+
+	<div class="col-md-4">
+
+	<div class="panel panel-default">
+
+	<div class="panel-body center-it">
+
+	<h2><%= food.name %></h2>
+
+	<p><%= number_to_currency(food.price) %></p>
+
+	<p><%= food.description %></p>
+
+	</div>
+
+	</div>
+
+	</div>
+
+	<% end %>
+
+	</div> 	
